@@ -1,0 +1,29 @@
+{
+        "offset": "30s",
+        "features": {
+            "io": [
+                {
+                    "metric": "avg",
+                    "field": "usage_system",
+                    "name": "mean_usage_system",
+                    "default": 0,
+                    "measurement": "cpu",
+                    "anomaly_type": "low_high"
+                }
+            ]
+        },
+        "bucket_interval": "5m",
+        "min_threshold": 75,
+        "max_threshold": 95,
+        "name": "telegraf",
+        "default_datasource": "telegraf",
+        "interval": "1m",
+        "max_evals": 5,
+        "type": "timeseries",
+        "span": 10,
+        "forecast": 5,
+        "seasonality": {
+            "daytime": true,
+            "weekday": true
+        }
+}

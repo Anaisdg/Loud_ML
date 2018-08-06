@@ -1,0 +1,11 @@
+datasources:
+  - name: telegraf
+    type: influxdb
+    addr: 172.18.0.86:8086
+    database: telegraf
+
+storage:
+  path: /var/lib/loudml
+
+server:
+  listen: 0.0.0.0:8077
